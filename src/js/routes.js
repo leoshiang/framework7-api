@@ -1,4 +1,3 @@
-
 import HomePage from '../pages/home.vue';
 
 var routes = [
