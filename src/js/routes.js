@@ -1,9 +1,14 @@
 import HomePage from '../pages/home.vue';
+import SignupPage from '../pages/signup.vue';
 
-var routes = [
+const routes = [
   {
     path: '/',
     component: HomePage,
+  },
+  {
+    path: '/signup',
+    component: SignupPage,
   },
 ];
 
