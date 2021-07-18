@@ -18,7 +18,9 @@
                     style="display: inline;">自動登入</span>
             </f7-col>
             <f7-col width="15">
-              <a href="/signup">註冊</a>
+              <f7-button small
+                         @click="signup">註冊
+              </f7-button>
             </f7-col>
             <f7-col width="25">
               <f7-button small>忘記密碼</f7-button>
@@ -36,3 +38,16 @@
     </div>
   </f7-page>
 </template>
+<script>
+export default {
+  name: 'home',
+  props: {
+    f7router: Object,
+  },
+  methods: {
+    signup() {
+      this.f7router.navigate('/signup/');
+    },
+  },
+};
+</script>
